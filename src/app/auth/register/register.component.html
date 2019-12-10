@@ -16,6 +16,10 @@
     </mat-form-field> <br>
 
     <mat-form-field class="example-full-width">
+      <input matInput placeholder="username" formControlName="username">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
       <input matInput placeholder="Name" formControlName="name">
     </mat-form-field> <br>
 
@@ -24,7 +28,7 @@
     </mat-form-field> <br>
 
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Residence Address" formControlName="residanceAddress">
+      <input matInput placeholder="Residence Address" formControlName="address">
     </mat-form-field> <br>
 
     <mat-form-field class=" example-full-width">
@@ -39,10 +43,14 @@
       <input matInput placeholder="Phone Number" formControlName="phoneNumber">
     </mat-form-field> <br>
 
-    <mat-form-field class="example-full-width">
+    <!-- <mat-form-field class="example-full-width">
       <input matInput placeholder="JMBG" formControlName="jmbg">
-    </mat-form-field> <br>
+    </mat-form-field> <br> -->
 
     <br> <button (click)=handleRegister() class="btn btn-success">Register</button>
   </form>
+
+  <div *ngIf="error">
+    {{error}}
+  </div>
 </div>

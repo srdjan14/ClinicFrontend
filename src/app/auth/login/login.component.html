@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Login!</h2>
+
+  <form class="example-form" [formGroup]="loginForm">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Username" formControlName="username">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Password" formControlName="password">
+    </mat-form-field> <br>
+
+    <br> <button (click)=handleLogin() [disabled]="!loginForm.valid" class="btn btn-success">Login</button>
+    <button (click)=handleRegister() class="btn btn-warning">Register</button>
+
+  </form>
+</div>

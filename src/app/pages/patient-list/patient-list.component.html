@@ -1,0 +1,22 @@
+<h1>Patient List</h1>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>JMBG</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let todo of todos">
+        <td>{{todo.name}}</td>
+        <td>{{todo.surname}}</td>
+        <td>{{todo.email}}</td>
+        <td>{{todo.JMBG}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

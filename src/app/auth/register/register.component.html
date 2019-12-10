@@ -1,0 +1,48 @@
+<div class="container">
+
+  <h2>Registration!</h2>
+
+  <form class="example-form" [formGroup]="registerForm">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email" formControlName="email">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Password" formControlName="password">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="RePassword" formControlName="rePassword">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Surname" formControlName="surname">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Residence Address" formControlName="residanceAddress">
+    </mat-form-field> <br>
+
+    <mat-form-field class=" example-full-width">
+      <input matInput placeholder="City" formControlName="city">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Country" formControlName="country">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Phone Number" formControlName="phoneNumber">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="JMBG" formControlName="jmbg">
+    </mat-form-field> <br>
+
+    <br> <button (click)=handleRegister() class="btn btn-success">Register</button>
+  </form>
+</div>
